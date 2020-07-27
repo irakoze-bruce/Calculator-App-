@@ -1,6 +1,9 @@
 /** @format */
 
 .App {
+  text-align: center;
+}
+.AppContainer {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -22,43 +22,46 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className='calc-wrapper'>
-          <Input input={this.state.input} />
-          <div className='row'>
-            <Button handleClick={this.addInput}>7</Button>
-            <Button handleClick={this.addInput}>8</Button>
-            <Button handleClick={this.addInput}>9</Button>
-            <Button handleClick={this.addInput}>/</Button>
-          </div>
+        <h1>Calculator App</h1>
+        <div className='AppContainer'>
+          <div className='calc-wrapper'>
+            <Input input={this.state.input} />
+            <div className='row'>
+              <Button handleClick={this.addInput}>7</Button>
+              <Button handleClick={this.addInput}>8</Button>
+              <Button handleClick={this.addInput}>9</Button>
+              <Button handleClick={this.addInput}>/</Button>
+            </div>
 
-          <div className='row'>
-            <Button handleClick={this.addInput}>4</Button>
-            <Button handleClick={this.addInput}>5</Button>
-            <Button handleClick={this.addInput}>6</Button>
-            <Button handleClick={this.addInput}>*</Button>
-          </div>
+            <div className='row'>
+              <Button handleClick={this.addInput}>4</Button>
+              <Button handleClick={this.addInput}>5</Button>
+              <Button handleClick={this.addInput}>6</Button>
+              <Button handleClick={this.addInput}>*</Button>
+            </div>
 
-          <div className='row'>
-            <Button handleClick={this.addInput}>1</Button>
-            <Button handleClick={this.addInput}>2</Button>
-            <Button handleClick={this.addInput}>3</Button>
-            <Button handleClick={this.addInput}>+</Button>
-          </div>
+            <div className='row'>
+              <Button handleClick={this.addInput}>1</Button>
+              <Button handleClick={this.addInput}>2</Button>
+              <Button handleClick={this.addInput}>3</Button>
+              <Button handleClick={this.addInput}>+</Button>
+            </div>
 
-          <div className='row'>
-            <Button handleClick={this.addInput}>.</Button>
-            <Button handleClick={this.addInput}>0</Button>
-            <Button handleClick={() => this.equalHandle()}>=</Button>
-            <Button handleClick={this.addInput}>-</Button>
-          </div>
-          <div className='row'>
-            <Button
-              handleClick={() => {
-                this.setState({ input: "" });
-              }}
-            >
-              clear
-            </Button>
+            <div className='row'>
+              <Button handleClick={this.addInput}>.</Button>
+              <Button handleClick={this.addInput}>0</Button>
+              <Button handleClick={() => this.equalHandle()}>=</Button>
+              <Button handleClick={this.addInput}>-</Button>
+            </div>
+            <div className='row'>
+              <Button
+                handleClick={() => {
+                  this.setState({ input: "" });
+                }}
+              >
+                clear
+              </Button>
+            </div>
           </div>
         </div>
       </div>
