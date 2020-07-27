@@ -1,0 +1,13 @@
+/** @format */
+
+.Input {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 1.3em;
+  outline: 1px solid #888888;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
